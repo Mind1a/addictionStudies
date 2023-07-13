@@ -195,4 +195,50 @@ header .header-nav-box a:link, header .header-nav-box a:visited {
   font-style: normal;
   font-weight: 700;
   line-height: 4.8rem;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .main-container {
+  margin: 0 15.2rem;
+}
+main .main-container .main-box {
+  margin: 10rem 0;
+}
+main .main-container .main-box-subtitle {
+  font-size: 4.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4.8rem;
+  margin-bottom: 2.4rem;
+}
+main .main-container .main-box-line {
+  width: 57.9rem;
+  height: 0.8rem;
+  background: #ff9900;
+  margin-left: -15.2rem;
+}
+main .main-container .main-box-texts {
+  margin: 3.3rem 0 0 42.9rem;
+}
+main .main-container .main-box-texts p {
+  font-family: "FiraGO";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 3.5rem;
+  margin-bottom: 4.3rem;
+}
+main .main-container .main-box-texts p span {
+  text-align: justify;
+  font-family: "bookNino";
+  font-weight: 700;
+}
+main .main-container .main-box-texts p span::after {
+  content: attr(colon);
+  font-weight: 400;
 }/*# sourceMappingURL=global.css.map */
