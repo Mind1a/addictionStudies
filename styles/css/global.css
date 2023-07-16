@@ -241,4 +241,48 @@ main .main-container .main-box-texts p span {
 main .main-container .main-box-texts p span::after {
   content: attr(colon);
   font-weight: 400;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.8rem;
+  padding: 10rem;
+  background-color: #000;
+  color: #fff;
+  font-style: normal;
+  line-height: 4rem;
+  font-weight: 400;
+}
+footer .mail-box {
+  display: flex;
+  align-items: center;
+  gap: 2.7rem;
+}
+footer .mail-box .mail {
+  font-size: 2.8rem;
+  letter-spacing: 0.084rem;
+}
+footer .address {
+  font-size: 2.5rem;
+  letter-spacing: 0.075rem;
+}
+footer .icons-box {
+  display: flex;
+  gap: 1.5rem;
+}
+footer .icons-box .img-fixed {
+  margin-top: -0.4rem;
+}
+footer .sub-text {
+  font-size: 1.5rem;
+  letter-spacing: 0.045rem;
+  font-weight: 400;
+}
+footer .sub-text a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
 }/*# sourceMappingURL=global.css.map */
