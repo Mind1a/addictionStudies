@@ -200,6 +200,9 @@ header .header-nav-box a:link, header .header-nav-box a:visited {
   font-weight: 700;
   line-height: 4.8rem;
 }
+header .header-nav-box .active {
+  box-shadow: inset 0 -5px 0 0 #ff9900;
+}
 
 main {
   display: flex;
@@ -245,6 +248,15 @@ main .main-container .main-box-texts-el span {
 main .main-container .main-box-texts-el span::after {
   content: attr(colon);
   font-weight: 400;
+}
+main .main-container .main-box-texts-el a {
+  color: #000;
+  font-family: "FiraGO";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4.8rem;
+  text-decoration-line: underline;
 }
 main .main-container .main-box-texts-el li::before {
   content: "•";
