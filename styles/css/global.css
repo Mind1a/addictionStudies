@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -162,7 +163,10 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 23.8rem;
-  padding: 0 15.2rem;
+  margin: 0 15.2rem;
+}
+header.border {
+  border-bottom: 1px solid #000;
 }
 header .header-title-box {
   max-width: 59rem;
@@ -225,7 +229,7 @@ main .main-container .main-box-line {
 main .main-container .main-box-texts {
   margin: 3.3rem 0 0 42.9rem;
 }
-main .main-container .main-box-texts p {
+main .main-container .main-box-texts-el {
   font-family: "FiraGO";
   font-size: 2.5rem;
   font-style: normal;
@@ -233,14 +237,20 @@ main .main-container .main-box-texts p {
   line-height: 3.5rem;
   margin-bottom: 4.3rem;
 }
-main .main-container .main-box-texts p span {
+main .main-container .main-box-texts-el span {
   text-align: justify;
   font-family: "bookNino";
   font-weight: 700;
 }
-main .main-container .main-box-texts p span::after {
+main .main-container .main-box-texts-el span::after {
   content: attr(colon);
   font-weight: 400;
+}
+main .main-container .main-box-texts-el li::before {
+  content: "•";
+  color: black;
+  display: inline-block;
+  margin: 0 2rem;
 }
 
 footer {
