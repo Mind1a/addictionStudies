@@ -161,6 +161,12 @@ html {
 body {
   font-family: "BookNino";
   color: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 192rem;
 }
 
 header {
@@ -217,6 +223,9 @@ main {
 }
 main .main-container {
   margin: 0 15.2rem;
+}
+main .main-container img {
+  max-width: 100%;
 }
 main .main-container .main-box {
   margin: 10rem 0;
