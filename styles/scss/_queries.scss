@@ -1,0 +1,15 @@
+@media (max-width: 109em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 87.5em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .header-nav-box {
+    gap: 4rem !important;
+  }
+}
