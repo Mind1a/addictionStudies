@@ -13,3 +13,23 @@
     gap: 4rem !important;
   }
 }
+
+@media (max-width: 75em) {
+  html {
+    font-size: 37.5%;
+  }
+
+  .header-nav-box {
+    gap: 2rem !important;
+  }
+
+  .main-container {
+    margin: 0 8.8rem;
+  }
+}
+
+@media (max-width: 62.5em) {
+  html {
+    font-size: 28.125%;
+  }
+}
