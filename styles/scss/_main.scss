@@ -1,6 +1,13 @@
 body {
   font-family: "BookNino";
   color: #000;
+  
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1920px;
 }
 
 header {
@@ -55,7 +62,7 @@ header {
     }
 
     .active {
-      box-shadow: inset 0 -5px 0 0 $mainOrange;
+      box-shadow: inset 0 -0.5rem 0 0 $mainOrange;
     }
   }
 }
@@ -68,6 +75,10 @@ main {
 
   .main-container {
     margin: 0 15.2rem;
+
+    img {
+      max-width: 100%;
+    }
 
     .main-box {
       margin: 10rem 0;
@@ -142,6 +153,7 @@ footer {
   color: #fff;
   font-style: normal;
   line-height: 4rem;
+  font-family: "FontNino";
   font-weight: 400;
 
   .mail-box {
@@ -153,6 +165,11 @@ footer {
       font-size: 2.8rem;
       letter-spacing: 0.084rem;
     }
+
+    .mailLogo1 {
+      width: 5rem;
+      height: 5rem;
+    }
   }
 
   .address {
@@ -163,6 +180,16 @@ footer {
   .icons-box {
     display: flex;
     gap: 1.5rem;
+
+    .fbLogo {
+      width: 6rem;
+      height: 6.1rem;
+    }
+
+    .mailLogo2 {
+      width: 5.7rem;
+      height: 5.7rem;
+    }
 
     .img-fixed {
       margin-top: -0.4rem;
