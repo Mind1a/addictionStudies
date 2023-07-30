@@ -1,9 +1,10 @@
 body {
   font-family: "BookNino";
   color: #000;
-  
+
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .container {
@@ -64,6 +65,19 @@ header {
     .active {
       box-shadow: inset 0 -0.5rem 0 0 $mainOrange;
     }
+  }
+
+  /* MOBILE */
+  .btn-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    display: none;
+  }
+
+  .close {
+    display: none;
   }
 }
 
@@ -155,6 +169,7 @@ footer {
   line-height: 4rem;
   font-family: "FontNino";
   font-weight: 400;
+  text-align: center;
 
   .mail-box {
     display: flex;

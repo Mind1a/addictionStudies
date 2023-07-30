@@ -163,6 +163,7 @@ body {
   color: #000;
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .container {
@@ -175,6 +176,7 @@ header {
   align-items: center;
   height: 23.8rem;
   margin: 0 15.2rem;
+  /* MOBILE */
 }
 header.border {
   border-bottom: 1px solid #000;
@@ -213,6 +215,15 @@ header .header-nav-box a:link, header .header-nav-box a:visited {
 }
 header .header-nav-box .active {
   box-shadow: inset 0 -0.5rem 0 0 #ff9900;
+}
+header .btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+header .close {
+  display: none;
 }
 
 main {
@@ -292,6 +303,7 @@ footer {
   line-height: 4rem;
   font-family: "FontNino";
   font-weight: 400;
+  text-align: center;
 }
 footer .mail-box {
   display: flex;
@@ -345,23 +357,87 @@ footer .sub-text a {
   html {
     font-size: 43.75%;
   }
-  .header-nav-box {
-    gap: 4rem !important;
+  header .header-nav-box {
+    gap: 4rem;
   }
 }
 @media (max-width: 75em) {
   html {
     font-size: 37.5%;
   }
-  .header-nav-box {
-    gap: 2rem !important;
+  header {
+    margin: 0 8.8rem;
   }
-  .main-container {
+  header .header-nav-box {
+    gap: 2rem;
+  }
+  main .main-container {
     margin: 0 8.8rem;
   }
 }
 @media (max-width: 62.5em) {
   html {
     font-size: 28.125%;
+  }
+}
+@media (max-width: 43.75em) {
+  header {
+    margin: 0 2.8rem;
+  }
+  header .btn-mobile-nav {
+    display: block;
+    z-index: 999;
+  }
+  header .header-nav {
+    background-color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    height: 91rem;
+    transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  header .header-nav .header-nav-box {
+    flex-direction: column;
+    gap: 12.6rem;
+    padding: 0 25.3rem;
+  }
+  header .header-nav .header-nav-box a {
+    font-size: 4rem;
+  }
+  .nav-open {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav-open .header-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .close {
+    display: block;
+  }
+  .nav-open .menu {
+    display: none;
+  }
+  main .main-container {
+    margin: 0 2.8rem;
+  }
+  main .main-container .main-box-texts {
+    margin-left: 0;
+  }
+  footer .sub-text {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 21.875em) {
+  html {
+    font-size: 22.25%;
   }
 }/*# sourceMappingURL=global.css.map */
