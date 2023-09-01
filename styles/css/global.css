@@ -168,6 +168,9 @@ body {
 
 .container {
   max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -228,9 +231,8 @@ header .close {
 
 main {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  flex: 1;
 }
 main .main-container {
   margin: 0 15.2rem;
