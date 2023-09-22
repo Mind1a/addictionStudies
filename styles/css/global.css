@@ -284,12 +284,26 @@ main .main-container .main-box-texts-el a {
   font-weight: 600;
   line-height: 4.8rem;
   text-decoration-line: underline;
+  cursor: pointer;
 }
 main .main-container .main-box-texts-el li::before {
   content: "•";
   color: black;
   display: inline-block;
   margin: 0 2rem;
+}
+main .main-container .main-box-texts-el .book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .main-container .main-box-texts-el .book-title {
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 400;
+}
+main .main-container .main-box-texts-el .book-img {
+  display: block;
 }
 
 footer {
