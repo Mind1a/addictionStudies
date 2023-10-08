@@ -104,6 +104,10 @@
       margin: 0 2.8rem;
 
       .main-box {
+        &-header {
+          margin-left: 0rem;
+        }
+
         &-texts {
           margin-left: 0;
         }

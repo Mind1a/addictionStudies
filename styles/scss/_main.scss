@@ -99,6 +99,29 @@ main {
     .main-box {
       margin: 10rem 0;
 
+      &-header {
+        display: flex;
+        align-items: center;
+        margin-left: -8rem;
+
+        &-btn {
+          width: 4rem;
+          height: 4rem;
+          background-color: rgb(0, 0, 0, 0.55);
+          border-radius: 50%;
+          transition: background-color 0.6s;
+          margin-top: -4rem;
+          
+          &:hover {
+            background-color: #000;
+          }
+        }
+
+        .main-box-subtitle {
+          margin-left: 3rem;
+        }
+      }
+
       &-subtitle {
         font-size: 4.5rem;
         font-style: normal;
@@ -160,13 +183,14 @@ main {
             align-items: center;
             
             &-title {
-              font-size: 4rem;
+              font-size: 3.2rem;
               line-height: 4rem;
               font-weight: 400;
             }
   
             &-img {
-              display: block;
+              z-index: -1;
+              width: 40rem;
             }
           }
         }
