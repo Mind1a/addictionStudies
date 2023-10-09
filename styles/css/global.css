@@ -243,6 +243,25 @@ main .main-container img {
 main .main-container .main-box {
   margin: 10rem 0;
 }
+main .main-container .main-box-header {
+  display: flex;
+  align-items: center;
+  margin-left: -8rem;
+}
+main .main-container .main-box-header-btn {
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(0, 0, 0, 0.55);
+  border-radius: 50%;
+  transition: background-color 0.6s;
+  margin-top: -4rem;
+}
+main .main-container .main-box-header-btn:hover {
+  background-color: #000;
+}
+main .main-container .main-box-header .main-box-subtitle {
+  margin-left: 3rem;
+}
 main .main-container .main-box-subtitle {
   font-size: 4.5rem;
   font-style: normal;
@@ -298,12 +317,13 @@ main .main-container .main-box-texts-el .book {
   align-items: center;
 }
 main .main-container .main-box-texts-el .book-title {
-  font-size: 4rem;
+  font-size: 3.2rem;
   line-height: 4rem;
   font-weight: 400;
 }
 main .main-container .main-box-texts-el .book-img {
-  display: block;
+  z-index: -1;
+  width: 40rem;
 }
 
 footer {
@@ -444,6 +464,9 @@ footer .sub-text a {
   }
   main .main-container {
     margin: 0 2.8rem;
+  }
+  main .main-container .main-box-header {
+    margin-left: 0rem;
   }
   main .main-container .main-box-texts {
     margin-left: 0;
